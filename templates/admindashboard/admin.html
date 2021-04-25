@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load bootstrap %}
+{% load static %}
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>वर्गिकृत नेपाल Admin - Dashboard</title>
+    <!-- Custom fonts for this template-->
+    <link
+      href="{% static 'admindashboard/vendor/fontawesome-free/css/all.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Page level plugin CSS-->
+    <link
+      href="{% static 'admindashboard/vendor/datatables/dataTables.bootstrap4.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="{% static 'admindashboard/css/sb-admin.css' %}" rel="stylesheet" />
+    <link href="{% static 'admindashboard/css/admin.css' %}" rel="stylesheet" />
+
+  
+
+</head>
+
+<body id="page-top">
+  <div class="container-fluid d-flex flex-column justify-content-center">
+    <div class="row">
+      <div class="col">
+        <div class="card text-white bg-primary mb-3" style="max-width: 35rem;">
+            <div class="card-header text-center">All Listings</div>
+            <div class="card-body">
+                <a href="/admins/listing"><h1 class="card-title text-center">{{listing}}</h1></a>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card text-white bg-warning mb-3" style="max-width: 35rem;">
+              <div class="card-header text-center">All Realtors</div>
+              <div class="card-body">
+                <a href="/admins/realtor"><h1 class="card-title text-center">{{realtor}}</h1></a>  
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card text-white bg-warning mb-3" style="max-width: 35rem;">
+            <div class="card-header text-center">All Contacts</div>
+            <div class="card-body">
+            <a href="/admins/contact"><h1 class="card-title text-center">{{contact}}</h1></a>  
+
+
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="row">
+      <div class="col">
+          <div class="card text-white bg-success mb-3" style="max-width: 35rem;">
+              <div class="card-header text-center">All Users</div>
+              <div class="card-body">
+                  <a href="/admins/users"><h1 class="card-title text-center">{{user}}</h1></a>
+
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card text-white bg-danger mb-3" style="max-width: 35rem;">
+              <div class="card-header text-center">Total Admins</div>
+              <div class="card-body">
+                  <h1 class="card-title text-center">{{admin}}</h1>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'admindashboard/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'admindashboard/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+
+    <!-- Core plugin JavaScript-->
+    
+  <script src="{% static 'admindashboard/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="{% static 'admindashboard/js/sb-admin.min.js' %}"></script>
+</body>
+
+
+</html>
